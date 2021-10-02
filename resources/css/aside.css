@@ -1,0 +1,14 @@
+.aside > .mas_visto{
+	margin: 50px;
+	height: 200px;
+	background: whitesmoke;
+}
+
+.mas_visto > img {
+	object-fit: fill;
+}
+.mas_visto > h2{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}

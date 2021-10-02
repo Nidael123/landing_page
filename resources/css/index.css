@@ -1,0 +1,77 @@
+.book{
+	background: white;
+	margin: 40px;
+	width: 90%;
+	height: 500px ;
+	display: grid;
+	grid-template-rows: 100px 300px 100px;
+	grid-template-columns: 45% 55%;
+	grid-template-areas: 
+	"title title"
+	"image texto"
+	"reference reference";
+}
+.title{
+	grid-area: title;
+	background: #8d99ae;
+}
+.title > h2 {
+	font-size: 30px;
+	text-align: center;
+	text-decoration: underline;
+}
+.image{
+	grid-area: image;
+	background: #2b2d42;
+	display: flex;
+	justify-content: center;
+}
+
+.image > img{
+	object-fit: cover;
+	margin: 50px 22px auto 22px;
+}
+.texto{
+	grid-area: texto;
+}
+
+.info{
+	margin: 15px;
+}
+
+.reference{
+	grid-area: reference;
+	background: #f8f32b;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+.cuadro{
+	background: white;
+	width: 75px;
+	height: 75px;
+	margin-right: 50px;
+	border: 1px solid;
+	text-align: center;
+}
+.data{
+	margin-top: 10px;
+	text-align: center;
+}
+
+@media (max-width: 800px){
+	.book{
+		background: white;
+		margin: 40px;
+		width: 90%;
+		height: 750px ;
+		display: grid;
+		grid-template-rows: 75px 300px 300px 100px;
+		grid-template-columns: 45% 55%;
+		grid-template-areas: 
+		"title title"
+		"image image"
+		"texto texto"
+		"reference reference";
+	}
+}
